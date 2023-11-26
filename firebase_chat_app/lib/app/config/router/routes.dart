@@ -1,4 +1,5 @@
-import 'package:firebase_chat_app/config/router/named_routes.dart';
+import 'package:firebase_chat_app/app/config/router/named_routes.dart';
+import 'package:firebase_chat_app/app/modules/auth/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -24,8 +25,7 @@ abstract class AppRouter {
         path: MyNamedRoutes.root,
         pageBuilder: (context, state) => NoTransitionPage(
           key: state.pageKey,
-          child: const SizedBox(),
-          //SplashScreen(),
+          child: const SplashScreen(),
         ),
       ),
       ShellRoute(
