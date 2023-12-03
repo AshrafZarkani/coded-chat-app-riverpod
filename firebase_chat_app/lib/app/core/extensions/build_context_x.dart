@@ -14,8 +14,6 @@ extension BuildContextX on BuildContext {
 
   double get screenHeight => MediaQuery.of(this).size.height;
 
-  double get textScaleFactor => MediaQuery.of(this).textScaleFactor;
-
   ScaffoldMessengerState get scaffoldMessenger => ScaffoldMessenger.of(this);
 
   AppLocalizations get translate => AppLocalizations.of(this);

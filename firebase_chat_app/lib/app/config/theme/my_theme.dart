@@ -27,8 +27,4 @@ class MyTheme {
       ),
     ),
   );
-
-  static ThemeData of(BuildContext context) {
-    return Theme.of(context);
-  }
 }
